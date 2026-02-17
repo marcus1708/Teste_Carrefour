@@ -1,8 +1,9 @@
-***Settings***
+*** Settings ***
 
 Resource  ../Resources/Config.robot
 Resource  ../Resources/Formulario.robot
 Resource  ../Resources/Navegacao.robot
+Resource  ../Resources/Login.robot
 
 *** Test Cases ***
 
@@ -38,29 +39,23 @@ Resource  ../Resources/Navegacao.robot
     Acessa a Área de Swipe
     Acessa a Área de Drag
     Close Session
-
 06 - Preenche e Valida o campo de Valida Texto Digitado
     Open Session
     Acessa a Área de Forms
     Preenche o campo de Texto
     Valida Texto Digitado
     Close Session
-07 - Liga chave switch para On
-    Open Session
-    Acessa a Área de Forms
-    Interação com chave Switch - ON
-    Close Session
-08 - Liga chave switch para Off
+07 - Liga chave switch para Off
     Open Session
     Acessa a Área de Forms
     Interação com chave Switch - OFF
     Close Session
-09 - Interação com DropDown
+08 - Interação com DropDown
     Open Session    
     Acessa a Área de Forms
     Interação com o DropDown
     Close Session
-10 - Interação com o Botão Active
+09 - Interação com o Botão Active
     Open Session
     Acessa a Área de Forms
     Interação com o Botão
