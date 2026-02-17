@@ -4,7 +4,7 @@ Library  AppiumLibrary
 
 ***Variables***
 ${home}        xpath=//android.widget.TextView[@text="WEBDRIVER"]
-${login}       xpath=(//android.widget.TextView[@text="Login"])[2]
+${login}       xpath=//android.widget.TextView[@text="Login"]
 ${val_login}   xpath=//android.widget.TextView[@text="Login / Sign up Form"]
 ${forms}       xpath=//android.widget.TextView[@text="Forms"]
 ${val_forms}   xpath=//android.widget.TextView[@text="Form components"]
