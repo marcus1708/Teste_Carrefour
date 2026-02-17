@@ -100,18 +100,6 @@ Verificar:
 
 pip show robotframework-requests
 
-🔹 Estrutura esperada do projeto (API)
-api/
-│
-├── tests/
-│   └── usuarios.robot
-│
-├── resources/
-│   └── usuario.robot
-│
-└── Json/
-    └── usuario.json
-
 🔹 Configuração da Sessão HTTP
 
 Exemplo padrão:
@@ -139,14 +127,6 @@ robot -v URL:https://serverest.dev api/tests
 
 📊 5️⃣ Relatórios Gerados
 
-Após execução, o Robot gera automaticamente:
+Após execução, o Robot gera automaticamente: report.html e log.html e output.xml
 
-report.html
-
-log.html
-
-output.xml
-
-Abrir:
-
-report.html
+Abrir: report.html
