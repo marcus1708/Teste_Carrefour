@@ -61,6 +61,10 @@ Login Usuario
 Atualiza Usuario
     [Arguments]    ${id}
     ${body}         Get File   path=${EXECDIR}/2 - Serverest/Json/usuario.json
+<<<<<<< HEAD
+=======
+
+>>>>>>> e16dd4a71184b60ad202c4e9c83258370886eb70
     ${header}       Create Dictionary  Content-Type=application/json
 
     ${response}     PUT On Session    alias=api    url=/usuarios/${id}    
