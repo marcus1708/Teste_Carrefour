@@ -56,7 +56,7 @@ Login Usuario
     RETURN        ${token} 
 Atualiza Usuario
     [Arguments]    ${id}
-    ${body}         Get File   path=${EXECDIR}/Json/usuario.json
+    ${body}         Get File   path=${EXECDIR}/2 - Serverest/Json/usuario.json
 
     ${header}       Create Dictionary  Content-Type=application/json
 
