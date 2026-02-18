@@ -1,0 +1,166 @@
+{
+  "version": 2,
+  "test_results": {
+    "09 - Interação com o Botão Active": {
+      "name": "09 - Interação com o Botão Active",
+      "status": "FAIL",
+      "message": "WebDriverException: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\nStacktrace:\nUnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\n    at UIA2Proxy.command (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\jsonwp-proxy\\proxy.js:310:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async AndroidUiautomator2Driver.doFindElementOrEls (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\build\\lib\\commands\\find.js:24:13)\n    at async doFind (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\build\\lib\\commands\\find.js:24:23)\n    at async wrappedCondFn (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\timeout.js:97:20)\n    at async spin (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\asyncbox\\build\\lib\\asyncbox.js:166:24)\n    at async waitForCondition (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\asyncbox\\build\\lib\\asyncbox.js:184:12)\n    at async AndroidUiautomator2Driver.implicitWaitForCondition (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\timeout.js:99:16)\n    at async AndroidUiautomator2Driver.findElOrEls (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\build\\lib\\commands\\find.js:45:9)\n    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\find.js:12:16)\n    at async AndroidUiautomator2Driver.findElements (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\find.js:30:16)",
+      "longname": "Testes Mobile.09 - Interação com o Botão Active",
+      "starttime": "20260218 15:04:52.444",
+      "endtime": "20260218 15:05:37.483",
+      "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Testes\\Testes_Mobile.robot",
+      "lineno": 58,
+      "failed_keywords": [
+        {
+          "name": "AppiumLibrary.Capture Page Screenshot",
+          "kwname": "Capture Page Screenshot",
+          "libname": "AppiumLibrary",
+          "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Resources\\Formulario.robot",
+          "lineno": 39,
+          "status": "FAIL",
+          "message": "WebDriverException: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\nStacktrace:\nUnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\n    at UIA2Proxy.command (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\jsonwp-proxy\\proxy.js:310:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async AndroidUiautomator2Driver.getScreenshot (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\build\\lib\\commands\\screenshot.js:72:19)",
+          "args": [],
+          "type": "KEYWORD"
+        },
+        {
+          "name": "AppiumLibrary.Click Element",
+          "kwname": "Click Element",
+          "libname": "AppiumLibrary",
+          "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Resources\\Formulario.robot",
+          "lineno": 39,
+          "status": "FAIL",
+          "message": "WebDriverException: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\nStacktrace:\nUnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\n    at UIA2Proxy.command (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\jsonwp-proxy\\proxy.js:310:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async AndroidUiautomator2Driver.doFindElementOrEls (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\build\\lib\\commands\\find.js:24:13)\n    at async doFind (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\build\\lib\\commands\\find.js:24:23)\n    at async wrappedCondFn (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\timeout.js:97:20)\n    at async spin (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\asyncbox\\build\\lib\\asyncbox.js:166:24)\n    at async waitForCondition (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\asyncbox\\build\\lib\\asyncbox.js:184:12)\n    at async AndroidUiautomator2Driver.implicitWaitForCondition (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\timeout.js:99:16)\n    at async AndroidUiautomator2Driver.findElOrEls (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\build\\lib\\commands\\find.js:45:9)\n    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\find.js:12:16)\n    at async AndroidUiautomator2Driver.findElements (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\find.js:30:16)",
+          "args": [
+            "${button_active}"
+          ],
+          "type": "KEYWORD"
+        },
+        {
+          "name": "Formulario.Interação com o Botão",
+          "kwname": "Interação com o Botão",
+          "libname": "Formulario",
+          "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Testes\\Testes_Mobile.robot",
+          "lineno": 61,
+          "status": "FAIL",
+          "message": "WebDriverException: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\nStacktrace:\nUnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\n    at UIA2Proxy.command (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\jsonwp-proxy\\proxy.js:310:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async AndroidUiautomator2Driver.doFindElementOrEls (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\build\\lib\\commands\\find.js:24:13)\n    at async doFind (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\build\\lib\\commands\\find.js:24:23)\n    at async wrappedCondFn (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\timeout.js:97:20)\n    at async spin (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\asyncbox\\build\\lib\\asyncbox.js:166:24)\n    at async waitForCondition (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\asyncbox\\build\\lib\\asyncbox.js:184:12)\n    at async AndroidUiautomator2Driver.implicitWaitForCondition (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\timeout.js:99:16)\n    at async AndroidUiautomator2Driver.findElOrEls (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\build\\lib\\commands\\find.js:45:9)\n    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\find.js:12:16)\n    at async AndroidUiautomator2Driver.findElements (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\find.js:30:16)",
+          "args": [],
+          "type": "KEYWORD"
+        }
+      ],
+      "stack_trace_key": "09 - Interação com o Botão Active_0"
+    }
+  },
+  "call_stacks": {
+    "09 - Interação com o Botão Active_0": [
+      {
+        "name": "Formulario.Interação com o Botão",
+        "kwname": "Interação com o Botão",
+        "libname": "Formulario",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Testes\\Testes_Mobile.robot",
+        "lineno": 61,
+        "args": [],
+        "depth": 1,
+        "type": "KEYWORD"
+      },
+      {
+        "name": "AppiumLibrary.Click Element",
+        "kwname": "Click Element",
+        "libname": "AppiumLibrary",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Resources\\Formulario.robot",
+        "lineno": 39,
+        "args": [
+          "${button_active}"
+        ],
+        "depth": 2,
+        "type": "KEYWORD"
+      },
+      {
+        "name": "AppiumLibrary.Capture Page Screenshot",
+        "kwname": "Capture Page Screenshot",
+        "libname": "AppiumLibrary",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Resources\\Formulario.robot",
+        "lineno": 39,
+        "args": [],
+        "depth": 3,
+        "type": "KEYWORD"
+      },
+      {
+        "name": "AppiumLibrary.Capture Page Screenshot",
+        "kwname": "Capture Page Screenshot",
+        "libname": "AppiumLibrary",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Resources\\Formulario.robot",
+        "lineno": 39,
+        "args": [],
+        "depth": 3,
+        "type": "KEYWORD",
+        "is_failure_point": true,
+        "message": "WebDriverException: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\nStacktrace:\nUnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\n    at UIA2Proxy.command (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\jsonwp-proxy\\proxy.js:310:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async AndroidUiautomator2Driver.getScreenshot (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\build\\lib\\commands\\screenshot.js:72:19)",
+        "status": "FAIL"
+      }
+    ],
+    "09 - Interação com o Botão Active_1": [
+      {
+        "name": "Formulario.Interação com o Botão",
+        "kwname": "Interação com o Botão",
+        "libname": "Formulario",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Testes\\Testes_Mobile.robot",
+        "lineno": 61,
+        "args": [],
+        "depth": 1,
+        "type": "KEYWORD"
+      },
+      {
+        "name": "AppiumLibrary.Click Element",
+        "kwname": "Click Element",
+        "libname": "AppiumLibrary",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Resources\\Formulario.robot",
+        "lineno": 39,
+        "args": [
+          "${button_active}"
+        ],
+        "depth": 2,
+        "type": "KEYWORD"
+      },
+      {
+        "name": "AppiumLibrary.Click Element",
+        "kwname": "Click Element",
+        "libname": "AppiumLibrary",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Resources\\Formulario.robot",
+        "lineno": 39,
+        "args": [
+          "${button_active}"
+        ],
+        "depth": 2,
+        "type": "KEYWORD",
+        "is_failure_point": true,
+        "message": "WebDriverException: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\nStacktrace:\nUnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\n    at UIA2Proxy.command (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\jsonwp-proxy\\proxy.js:310:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async AndroidUiautomator2Driver.doFindElementOrEls (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\build\\lib\\commands\\find.js:24:13)\n    at async doFind (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\build\\lib\\commands\\find.js:24:23)\n    at async wrappedCondFn (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\timeout.js:97:20)\n    at async spin (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\asyncbox\\build\\lib\\asyncbox.js:166:24)\n    at async waitForCondition (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\asyncbox\\build\\lib\\asyncbox.js:184:12)\n    at async AndroidUiautomator2Driver.implicitWaitForCondition (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\timeout.js:99:16)\n    at async AndroidUiautomator2Driver.findElOrEls (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\build\\lib\\commands\\find.js:45:9)\n    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\find.js:12:16)\n    at async AndroidUiautomator2Driver.findElements (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\find.js:30:16)",
+        "status": "FAIL"
+      }
+    ],
+    "09 - Interação com o Botão Active_2": [
+      {
+        "name": "Formulario.Interação com o Botão",
+        "kwname": "Interação com o Botão",
+        "libname": "Formulario",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Testes\\Testes_Mobile.robot",
+        "lineno": 61,
+        "args": [],
+        "depth": 1,
+        "type": "KEYWORD"
+      },
+      {
+        "name": "Formulario.Interação com o Botão",
+        "kwname": "Interação com o Botão",
+        "libname": "Formulario",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Testes\\Testes_Mobile.robot",
+        "lineno": 61,
+        "args": [],
+        "depth": 1,
+        "type": "KEYWORD",
+        "is_failure_point": true,
+        "message": "WebDriverException: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\nStacktrace:\nUnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\n    at UIA2Proxy.command (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\jsonwp-proxy\\proxy.js:310:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async AndroidUiautomator2Driver.doFindElementOrEls (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\build\\lib\\commands\\find.js:24:13)\n    at async doFind (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\build\\lib\\commands\\find.js:24:23)\n    at async wrappedCondFn (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\timeout.js:97:20)\n    at async spin (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\asyncbox\\build\\lib\\asyncbox.js:166:24)\n    at async waitForCondition (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\asyncbox\\build\\lib\\asyncbox.js:184:12)\n    at async AndroidUiautomator2Driver.implicitWaitForCondition (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\timeout.js:99:16)\n    at async AndroidUiautomator2Driver.findElOrEls (C:\\Users\\ADM\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\build\\lib\\commands\\find.js:45:9)\n    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\find.js:12:16)\n    at async AndroidUiautomator2Driver.findElements (C:\\Users\\ADM\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\build\\lib\\basedriver\\commands\\find.js:30:16)",
+        "status": "FAIL"
+      }
+    ]
+  }
+}

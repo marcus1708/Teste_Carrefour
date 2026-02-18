@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "test_results": {
+    "08 - Interação com DropDown": {
+      "name": "08 - Interação com DropDown",
+      "status": "PASS",
+      "message": "",
+      "longname": "Testes Mobile.08 - Interação com DropDown",
+      "starttime": "20260218 15:10:56.053",
+      "endtime": "20260218 15:11:55.257",
+      "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Testes\\Testes_Mobile.robot",
+      "lineno": 53,
+      "failed_keywords": []
+    }
+  },
+  "call_stacks": {}
+}

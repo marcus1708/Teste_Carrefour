@@ -1,0 +1,111 @@
+{
+  "version": 2,
+  "test_results": {
+    "08 - Interação com DropDown": {
+      "name": "08 - Interação com DropDown",
+      "status": "FAIL",
+      "message": "ValueError: Element locator 'xpath=//android.widget.CheckedTextView[@resource-id=\"android:id/text1\" and @text=\"webdriver.io is awesome\"]' did not match any elements.",
+      "longname": "Testes Mobile.08 - Interação com DropDown",
+      "starttime": "20260218 15:03:40.118",
+      "endtime": "20260218 15:04:29.094",
+      "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Testes\\Testes_Mobile.robot",
+      "lineno": 53,
+      "failed_keywords": [
+        {
+          "name": "AppiumLibrary.Element Text Should Be",
+          "kwname": "Element Text Should Be",
+          "libname": "AppiumLibrary",
+          "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Resources\\Formulario.robot",
+          "lineno": 36,
+          "status": "FAIL",
+          "message": "ValueError: Element locator 'xpath=//android.widget.CheckedTextView[@resource-id=\"android:id/text1\" and @text=\"webdriver.io is awesome\"]' did not match any elements.",
+          "args": [
+            "${option1}",
+            "webdriver.io is awesome"
+          ],
+          "type": "KEYWORD"
+        },
+        {
+          "name": "Formulario.Interação com o DropDown",
+          "kwname": "Interação com o DropDown",
+          "libname": "Formulario",
+          "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Testes\\Testes_Mobile.robot",
+          "lineno": 56,
+          "status": "FAIL",
+          "message": "ValueError: Element locator 'xpath=//android.widget.CheckedTextView[@resource-id=\"android:id/text1\" and @text=\"webdriver.io is awesome\"]' did not match any elements.",
+          "args": [],
+          "type": "KEYWORD"
+        }
+      ],
+      "stack_trace_key": "08 - Interação com DropDown_0"
+    }
+  },
+  "call_stacks": {
+    "08 - Interação com DropDown_0": [
+      {
+        "name": "Formulario.Interação com o DropDown",
+        "kwname": "Interação com o DropDown",
+        "libname": "Formulario",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Testes\\Testes_Mobile.robot",
+        "lineno": 56,
+        "args": [],
+        "depth": 1,
+        "type": "KEYWORD"
+      },
+      {
+        "name": "AppiumLibrary.Element Text Should Be",
+        "kwname": "Element Text Should Be",
+        "libname": "AppiumLibrary",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Resources\\Formulario.robot",
+        "lineno": 36,
+        "args": [
+          "${option1}",
+          "webdriver.io is awesome"
+        ],
+        "depth": 2,
+        "type": "KEYWORD"
+      },
+      {
+        "name": "AppiumLibrary.Element Text Should Be",
+        "kwname": "Element Text Should Be",
+        "libname": "AppiumLibrary",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Resources\\Formulario.robot",
+        "lineno": 36,
+        "args": [
+          "${option1}",
+          "webdriver.io is awesome"
+        ],
+        "depth": 2,
+        "type": "KEYWORD",
+        "is_failure_point": true,
+        "message": "ValueError: Element locator 'xpath=//android.widget.CheckedTextView[@resource-id=\"android:id/text1\" and @text=\"webdriver.io is awesome\"]' did not match any elements.",
+        "status": "FAIL"
+      }
+    ],
+    "08 - Interação com DropDown_1": [
+      {
+        "name": "Formulario.Interação com o DropDown",
+        "kwname": "Interação com o DropDown",
+        "libname": "Formulario",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Testes\\Testes_Mobile.robot",
+        "lineno": 56,
+        "args": [],
+        "depth": 1,
+        "type": "KEYWORD"
+      },
+      {
+        "name": "Formulario.Interação com o DropDown",
+        "kwname": "Interação com o DropDown",
+        "libname": "Formulario",
+        "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Testes\\Testes_Mobile.robot",
+        "lineno": 56,
+        "args": [],
+        "depth": 1,
+        "type": "KEYWORD",
+        "is_failure_point": true,
+        "message": "ValueError: Element locator 'xpath=//android.widget.CheckedTextView[@resource-id=\"android:id/text1\" and @text=\"webdriver.io is awesome\"]' did not match any elements.",
+        "status": "FAIL"
+      }
+    ]
+  }
+}
