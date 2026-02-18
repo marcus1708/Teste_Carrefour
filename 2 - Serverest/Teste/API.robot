@@ -3,8 +3,8 @@ Resource    ../Resources/usuario.robot
 Suite Setup        Criar Sessão    https://serverest.dev    
 Suite Teardown     Encerrar Sessão
 *** Variables ***
-${email}       qa@qa.com
-${password}    teste
+${email}       qa@qa.io
+${password}    123
 *** Test Cases ***
 CRUD Usuario
     ${id}    Cria Usuario

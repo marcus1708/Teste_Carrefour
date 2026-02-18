@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "test_results": {
+    "01 - Validar Área de Login": {
+      "name": "01 - Validar Área de Login",
+      "status": "PASS",
+      "message": "",
+      "longname": "Testes Mobile.01 - Validar Área de Login",
+      "starttime": "20260218 14:25:29.784",
+      "endtime": "20260218 14:27:26.798",
+      "source": "c:\\Users\\ADM\\Desktop\\Teste_Carrefour\\1 - Mobile\\Testes\\Testes_Mobile.robot",
+      "lineno": 10,
+      "failed_keywords": []
+    }
+  },
+  "call_stacks": {}
+}

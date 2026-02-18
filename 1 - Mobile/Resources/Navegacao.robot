@@ -22,18 +22,22 @@ Acessa a Área de Login
     Click Element   ${login}
     Wait Until Element Is Visible  ${val_login}   
     Element Text Should Be  ${val_login}   Login / Sign up Form
+    Capture Page Screenshot
 
 Acessa a Área de Forms
     Click Element   ${forms}
     Wait Until Element Is Visible  ${val_forms}     
     Element Text Should Be    ${val_forms}    Form components
+    Capture Page Screenshot
 
 Acessa a Área de Swipe
     Click Element   ${swipe}
     Wait Until Element Is Visible  ${val_swipe} 
     Element Text Should Be    ${val_swipe}    Swipe horizontal
+    Capture Page Screenshot
 
 Acessa a Área de Drag
     Click Element   ${drag}
     Wait Until Element Is Visible  ${val_drag}   
     Element Text Should Be    ${val_drag}    Drag and Drop
+    Capture Page Screenshot

@@ -12,18 +12,22 @@ Criar Sessão
 Encerrar Sessão
     Delete All Sessions
 Cria Usuario
-    ${body}         Get File   path=${EXECDIR}/Json/usuario.json
+    ${body_str}     Get File    path=${EXECDIR}/2 - Serverest/Json/usuario.json
+    ${body}         Evaluate    json.loads($body_str)    json
 
-    ${header}       Create Dictionary  Content-Type=application/json
+    ${response}     POST On Session
+    ...    alias=api
+    ...    url=/usuarios
+    ...    json=${body}
+    ...    expected_status=201
 
-    ${response}     POST On Session    alias=api    url=/usuarios    
-    ...             headers=${header}    
-    ...             data=${body}
-    ...             expected_status=201
-    
-    ${id}      Set Variable    ${response.json()['_id']}
-    Dictionary Should Contain Value   ${response.json()}    Cadastro realizado com sucesso
-    RETURN        ${id} 
+    ${id}    Set Variable    ${response.json()['_id']}
+    Dictionary Should Contain Value
+    ...    ${response.json()}
+    ...    Cadastro realizado com sucesso
+
+    RETURN    ${id}
+
 Consulta Usuario Lista
     ${header}       Create Dictionary  Content-Type=application/json
 
@@ -56,8 +60,7 @@ Login Usuario
     RETURN        ${token} 
 Atualiza Usuario
     [Arguments]    ${id}
-    ${body}         Get File   path=${EXECDIR}/Json/usuario.json
-
+    ${body}         Get File   path=${EXECDIR}/2 - Serverest/Json/usuario.json
     ${header}       Create Dictionary  Content-Type=application/json
 
     ${response}     PUT On Session    alias=api    url=/usuarios/${id}    

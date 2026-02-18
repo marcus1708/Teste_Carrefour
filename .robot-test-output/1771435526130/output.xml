@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.3 on win32)" generated="2026-02-18T14:25:28.064118" rpa="false" schemaversion="5">
+<suite id="s1" name="Testes Mobile" source="c:\Users\ADM\Desktop\Teste_Carrefour\1 - Mobile\Testes\Testes_Mobile.robot">
+<test id="s1-t1" name="01 - Validar Área de Login" line="10">
+<kw name="Open Session" owner="Config">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Mobile</arg>
+<arg>app=C:/Users/ADM/Documents/app/carrefour.apk</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2026-02-18T14:25:29.789496" elapsed="43.362324"/>
+</kw>
+<status status="PASS" start="2026-02-18T14:25:29.787690" elapsed="43.364847"/>
+</kw>
+<kw name="Acessa a Área de Login" owner="Navegacao">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-02-18T14:26:13.160267" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text="Login"]'.</msg>
+<msg time="2026-02-18T14:26:24.863029" level="INFO">xpath criteria: //android.widget.TextView[@text="Login"]</msg>
+<arg>${login}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T14:26:13.155178" elapsed="11.708256"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-02-18T14:26:30.140886" level="INFO">xpath criteria: //android.widget.TextView[@text="Login / Sign up Form"]</msg>
+<arg>${val_login}</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T14:26:24.864119" elapsed="5.277268"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<msg time="2026-02-18T14:26:30.148934" level="INFO">Verifying element 'xpath=//android.widget.TextView[@text="Login / Sign up Form"]' contains exactly text 'Login / Sign up Form'.</msg>
+<msg time="2026-02-18T14:26:34.847630" level="INFO">xpath criteria: //android.widget.TextView[@text="Login / Sign up Form"]</msg>
+<arg>${val_login}</arg>
+<arg>Login / Sign up Form</arg>
+<doc>Verifies that the element identified by ``locator`` contains the exact text ``expected``.</doc>
+<status status="PASS" start="2026-02-18T14:26:30.142487" elapsed="4.705533"/>
+</kw>
+<status status="PASS" start="2026-02-18T14:26:13.153669" elapsed="21.694893"/>
+</kw>
+<kw name="Valida se todos os elementos estão visíveis na tela de Login" owner="Login">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-02-18T14:26:39.266562" level="INFO">xpath criteria: //android.widget.TextView[@text="Login"]</msg>
+<arg>${login}</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T14:26:34.850666" elapsed="4.416285"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-02-18T14:26:43.644490" level="INFO">xpath criteria: //android.widget.EditText[@content-desc="input-email"]</msg>
+<arg>${email}</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T14:26:39.267583" elapsed="4.377023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-02-18T14:26:47.791843" level="INFO">xpath criteria: //android.widget.EditText[@content-desc="input-password"]</msg>
+<arg>${password}</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T14:26:43.644947" elapsed="4.147087"/>
+</kw>
+<status status="PASS" start="2026-02-18T14:26:34.849495" elapsed="12.942787"/>
+</kw>
+<kw name="Preenche Área de Login" owner="Login">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2026-02-18T14:26:47.794611" level="INFO">Typing text 'qa@qa.io' into text field 'xpath=//android.widget.EditText[@content-desc="input-email"]'</msg>
+<msg time="2026-02-18T14:26:52.574151" level="INFO">xpath criteria: //android.widget.EditText[@content-desc="input-email"]</msg>
+<arg>${email}</arg>
+<arg>qa@qa.io</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T14:26:47.793001" elapsed="4.781362"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2026-02-18T14:26:52.578685" level="INFO">Typing text '12345678' into text field 'xpath=//android.widget.EditText[@content-desc="input-password"]'</msg>
+<msg time="2026-02-18T14:26:57.280213" level="INFO">xpath criteria: //android.widget.EditText[@content-desc="input-password"]</msg>
+<arg>${password}</arg>
+<arg>12345678</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T14:26:52.574904" elapsed="4.705789"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-02-18T14:26:57.286607" level="INFO">Clicking element 'xpath=//android.view.ViewGroup[@content-desc="button-LOGIN"]'.</msg>
+<msg time="2026-02-18T14:27:01.713242" level="INFO">xpath criteria: //android.view.ViewGroup[@content-desc="button-LOGIN"]</msg>
+<arg>${btn_login}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T14:26:57.281473" elapsed="4.432244"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-02-18T14:27:07.111231" level="INFO">criteria is com.wdiodemoapp:id/alert_title</msg>
+<arg>${msg_ok}</arg>
+<arg>10s</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T14:27:01.714715" elapsed="5.396814"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<msg time="2026-02-18T14:27:07.116381" level="INFO">Verifying element 'id=com.wdiodemoapp:id/alert_title' contains exactly text 'Success'.</msg>
+<msg time="2026-02-18T14:27:11.223987" level="INFO">criteria is com.wdiodemoapp:id/alert_title</msg>
+<arg>${msg_ok}</arg>
+<arg>Success</arg>
+<doc>Verifies that the element identified by ``locator`` contains the exact text ``expected``.</doc>
+<status status="PASS" start="2026-02-18T14:27:07.112402" elapsed="4.111839"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2026-02-18T14:27:15.332610" level="INFO">criteria is android:id/message</msg>
+<arg>${msg_ok_2}</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T14:27:11.224603" elapsed="4.108178"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<msg time="2026-02-18T14:27:15.334990" level="INFO">Verifying element 'id=android:id/message' contains exactly text 'You are logged in!'.</msg>
+<msg time="2026-02-18T14:27:19.422275" level="INFO">criteria is android:id/message</msg>
+<arg>${msg_ok_2}</arg>
+<arg>You are logged in!</arg>
+<doc>Verifies that the element identified by ``locator`` contains the exact text ``expected``.</doc>
+<status status="PASS" start="2026-02-18T14:27:15.333118" elapsed="4.089262"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2026-02-18T14:27:19.426136" level="INFO">Clicking element 'id=android:id/button1'.</msg>
+<msg time="2026-02-18T14:27:23.587361" level="INFO">criteria is android:id/button1</msg>
+<arg>${ok}</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T14:27:19.422704" elapsed="4.164827"/>
+</kw>
+<status status="PASS" start="2026-02-18T14:26:47.792633" elapsed="35.795202"/>
+</kw>
+<kw name="Close Session" owner="Config">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="PASS" start="2026-02-18T14:27:23.589448" elapsed="3.206077"/>
+</kw>
+<status status="PASS" start="2026-02-18T14:27:23.588589" elapsed="3.207827"/>
+</kw>
+<status status="PASS" start="2026-02-18T14:25:29.784251" elapsed="117.013914"/>
+</test>
+<status status="PASS" start="2026-02-18T14:25:28.155263" elapsed="118.645503"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testes Mobile" id="s1" pass="1" fail="0" skip="0">Testes Mobile</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

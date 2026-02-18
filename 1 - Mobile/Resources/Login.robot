@@ -24,6 +24,7 @@ Valida se todos os elementos estão visíveis na tela de Login
     Wait Until Element Is Visible  ${login}                   
     Wait Until Element Is Visible  ${email}            
     Wait Until Element Is Visible  ${password} 
+    Capture Page Screenshot
 
 Valida se todos os elementos estão visíveis na tela de Cadastro
     Click Element   ${sign_Up}
@@ -31,7 +32,9 @@ Valida se todos os elementos estão visíveis na tela de Cadastro
     Wait Until Element Is Visible  ${email}            
     Wait Until Element Is Visible  ${password}    
     Wait Until Element Is Visible  ${repeat_password}   
-    Wait Until Element Is Visible  ${btn_sign_Up}    
+    Wait Until Element Is Visible  ${btn_sign_Up}  
+    Capture Page Screenshot
+
 Preenche Área de Login
     Input Text      ${email}       qa@qa.io
     Input Text      ${password}    12345678
@@ -40,6 +43,7 @@ Preenche Área de Login
     Element Text Should Be  ${msg_ok}   Success
     Wait Until Element Is Visible  ${msg_ok_2}  
     Element Text Should Be  ${msg_ok_2}  You are logged in!
+    Capture Page Screenshot
     Click Element    ${ok}   
 Preenche Área de Cadastro
     Input Text      ${email}       qa@qa.io
@@ -50,6 +54,7 @@ Preenche Área de Cadastro
     Element Text Should Be  ${msg_ok}   Signed Up!
     Wait Until Element Is Visible  ${msg_ok_2}  
     Element Text Should Be  ${msg_ok_2}  You successfully signed up!
+    Capture Page Screenshot
     Click Element    ${ok}
 Preenche Área de Login com Dados Inválidos
     Input Text      ${email}       qa.io.com
@@ -61,6 +66,7 @@ Preenche Área de Login com Dados Inválidos
 
     Wait Until Element Is Visible  ${err_senha} 
     Element Text Should Be  ${err_senha}  Please enter at least 8 characters
+    Capture Page Screenshot
  
 Preenche Área de Cadastro com Dados Inválidos 
     Input Text      ${email}       qa.io.com
@@ -73,4 +79,5 @@ Preenche Área de Cadastro com Dados Inválidos
 
     Wait Until Element Is Visible  ${err_senha_2} 
     Element Text Should Be  ${err_senha_2}  Please enter the same password
+    Capture Page Screenshot
  
